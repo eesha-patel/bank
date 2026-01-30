@@ -9,7 +9,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public int addCustomer(Customers customers) {
-        return 0;
+        return -1;
     }
 
     @Override

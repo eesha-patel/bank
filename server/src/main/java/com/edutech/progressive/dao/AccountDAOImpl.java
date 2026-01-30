@@ -1,5 +1,6 @@
 package com.edutech.progressive.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.edutech.progressive.entity.Accounts;
@@ -8,7 +9,7 @@ public class AccountDAOImpl implements AccountDAO {
 
     @Override
     public int addAccount(Accounts accounts) {
-        return 0;
+        return -1;
     }
 
     @Override
@@ -29,7 +30,7 @@ public class AccountDAOImpl implements AccountDAO {
 
     @Override
     public List<Accounts> getAllAccountsByCustomer(int customer_id) {
-        return null;
+        return new ArrayList<>();
     }
 
     @Override

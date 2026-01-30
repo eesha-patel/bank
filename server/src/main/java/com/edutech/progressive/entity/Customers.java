@@ -1,6 +1,6 @@
 package com.edutech.progressive.entity;
 
-public class Customers {
+public class Customers implements Comparable<Customers>{
     private int customerId;
     private String name;
     private String email;
@@ -51,7 +51,19 @@ public class Customers {
     public void setRole(String role) {
         this.role = role;
     }
-
     
+    @Override
+    public int compareTo(Customers o) {
+        if(this.name == null && o.name == null){
+            return 0;
+        }
+        if(this.name==null){
+            return 1;
+        }
+        if(o.name == null){
+            return -1;
+        }
+        return this.name.compareTo(o.name);
+    }
 
 }

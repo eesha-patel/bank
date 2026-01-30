@@ -7,10 +7,9 @@ import com.edutech.progressive.dto.CustomerAccountInfo;
 import com.edutech.progressive.entity.Customers;
 
 public interface CustomerDAO {
-    int addCustomer(Customers customers);
-    Customers getCustomerById(int customerId);
-    void updateCustomer(Customers customers);
-    void deleteCustomer(int customerId);
-    List<Customers> getAllCustomers();
-    CustomerAccountInfo getCustomerAccountInfo(int customerId);
+    public Customers getCustomerById(int customerId);
+    public int addCustomer(Customers customers);
+    public void updateCustomer(Customers customers);
+    public void deleteCustomer(int customerId);
+    public CustomerAccountInfo getCustomerAccountInfo(int customerId);
 }

@@ -8,8 +8,10 @@ import com.edutech.progressive.entity.Accounts;
 
 public interface AccountDAO {
     int addAccount(Accounts accounts) throws SQLException;
-    Accounts getAccountById(int accountId)throws SQLException;
-    void updateAccount(Accounts accounts)throws SQLException;
-    void deleteAccount(int accountId)throws SQLException;
-    List<Accounts> getAllAccounts()throws SQLException;
+    Accounts getAccountById(int accountId) throws SQLException;
+    void updateAccount(Accounts accounts) throws SQLException;
+    void deleteAccount(int accountId) throws SQLException;
+    List<Accounts> getAllAccounts() throws SQLException;
+    List<Accounts> getAllAccountsByCustomer(int customer_id);
+    
 }
